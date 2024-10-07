@@ -7,6 +7,26 @@ public class Giocatore {
         capitano=false;
         gol=0;
     }
+    public Giocatore(String nome1){
+        nome=nome1;
+        capitano=false;
+        gol=0;
+    }
+    public Giocatore(boolean capitano1){
+        nome=null;
+        capitano=capitano1;
+        gol=0;
+    }
+    public Giocatore(int gol1){
+        nome=null;
+        capitano=false;
+        gol=gol1;
+    }
+    public Giocatore(String nome1,boolean capitano1,int gol1){
+        nome=nome1;
+        capitano=capitano1;
+        gol=gol1;
+    }
     public String getNome (){
         return nome;
     }
@@ -15,5 +35,14 @@ public class Giocatore {
     }
     public int getGol(){
         return gol;
+    }
+    public void setNome(String nome1){
+        nome=nome1;
+    }
+    public void setCapitano(boolean capitano1){
+        capitano=capitano1;
+    }
+    public void setGol(int gol1){
+        gol=gol1;
     }
 }
