@@ -8,7 +8,7 @@ public class Giocatore {
         gol=0;
     }
     public Giocatore(String nome1){
-        nome=nome1;
+        setNome(nome1);
         capitano=false;
         gol=0;
     }
