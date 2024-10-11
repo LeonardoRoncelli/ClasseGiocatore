@@ -14,18 +14,18 @@ public class Giocatore {
     }
     public Giocatore(boolean capitano1){
         nome=null;
-        capitano=capitano1;
+        setCapitano(capitano1);
         gol=0;
     }
     public Giocatore(int gol1){
         nome=null;
         capitano=false;
-        gol=gol1;
+        setGol(gol1);
     }
     public Giocatore(String nome1,boolean capitano1,int gol1){
-        nome=nome1;
-        capitano=capitano1;
-        gol=gol1;
+        setNome(nome1);
+        setCapitano(capitano1);
+        setGol(gol1);
     }
     public String getNome (){
         return nome;
