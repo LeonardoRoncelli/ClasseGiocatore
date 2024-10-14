@@ -14,4 +14,11 @@ public class Funzioni {
     public static void modifica(Giocatore[]giocatori,int sceltaGiocatore){
 
     }
+    public static void cinqueGol(Giocatore[]giocatori){
+        for(int i=0;i<giocatori.length;i++){
+            if(giocatori[i].getGol()>5){
+                System.out.println(giocatori[i].getNome());
+            }
+        }
+    }
 }

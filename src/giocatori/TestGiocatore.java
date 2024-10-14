@@ -48,11 +48,7 @@ public class TestGiocatore {
                 break;
             }
             case 5:{
-                for(int i=0;i<giocatori.length;i++){
-                    if(giocatori[i].getGol()>5){
-                        System.out.println(giocatori[i].getNome());
-                    }
-                }
+                Funzioni.cinqueGol(giocatori);
                 break;
             }
             case 6:{
