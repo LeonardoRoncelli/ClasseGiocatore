@@ -52,11 +52,7 @@ public class TestGiocatore {
                 break;
             }
             case 6:{
-                for(int i=0;i<giocatori.length;i++){
-                    if(giocatori[i].getCapitano()){
-                        System.out.println("Il capitano si chiama:"+giocatori[i].getNome());
-                    }
-                }
+                Funzioni.capitano(giocatori);
                 break;
             }
         }
