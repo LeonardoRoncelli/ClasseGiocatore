@@ -5,6 +5,7 @@ public class Funzioni {
             if(giocatori[i].getCapitano()){
                 System.out.println("C'è già un capitano");
                 break;
+
             }
         }
     }
