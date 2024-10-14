@@ -1,3 +1,4 @@
+package giocatori;
 public class Giocatore {
     private String nome;
     private boolean capitano;
