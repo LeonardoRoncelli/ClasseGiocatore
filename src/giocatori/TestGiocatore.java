@@ -18,6 +18,7 @@ public class TestGiocatore {
                 giocatori[0]=new Giocatore();
                 giocatori[0].setNome(input.next());
                 Funzioni.aggiunta(giocatori);
+                break;
             }
             case 2:{
                 for(int i=0;i<giocatori.length;i++){
@@ -25,6 +26,7 @@ public class TestGiocatore {
                     System.out.println(giocatori[i].getCapitano());
                     System.out.println(giocatori[i].getGol());
                 }
+                break;
             }
             case 3:{
                 int sceltaGiocatore;
@@ -35,12 +37,15 @@ public class TestGiocatore {
                     giocatori[sceltaGiocatore].setCapitano(false);
                 }
                 giocatori[sceltaGiocatore].setGol(input.nextInt());
+                Funzioni.modifica(giocatori,sceltaGiocatore);
+                break;
             }
             case 4:{
                 int cancella;
                 System.out.println("Inserisci il giocatore da cancellare");
                 cancella= input.nextInt();
                 //da completare
+                break;
             }
             case 5:{
                 for(int i=0;i<giocatori.length;i++){
@@ -48,6 +53,7 @@ public class TestGiocatore {
                         System.out.println(giocatori[i].getNome());
                     }
                 }
+                break;
             }
             case 6:{
                 for(int i=0;i<giocatori.length;i++){
@@ -55,6 +61,7 @@ public class TestGiocatore {
                         System.out.println("Il capitano si chiama:"+giocatori[i].getNome());
                     }
                 }
+                break;
             }
         }
     }

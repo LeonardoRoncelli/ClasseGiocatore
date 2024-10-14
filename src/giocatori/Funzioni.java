@@ -8,4 +8,10 @@ public class Funzioni {
             }
         }
     }
+    public static void vosulizza(Giocatore []giocatori){
+
+    }
+    public static void modifica(Giocatore[]giocatori,int sceltaGiocatore){
+
+    }
 }
